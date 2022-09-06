@@ -8,7 +8,7 @@ This plugin uses the built-in WordPress filters [use_block_editor_for_post](http
 - Create a new release or upload the `disable-things` directory to the `/wp-content/plugins/` directory in your WordPress installation
 - Activate the plugin through the \"Plugins\" menu in WordPress
 - The Gutenberg Editor and WordPress XML-RPC methods are now disabled
-- To re-enable the Gutenberg Editor and XML-RPC Portocol, just deactivate the plugin through the \"Plugins\" menu
+- To re-enable the Gutenberg Editor and XML-RPC Protocol, just deactivate the plugin through the \"Plugins\" menu
 
 ## Changelog
 * 1.0
