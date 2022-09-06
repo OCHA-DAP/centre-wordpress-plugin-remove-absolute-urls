@@ -26,7 +26,7 @@ jobs:
           RCLONE_CONFIG_HDX_USER: ${{ secrets.RCLONE_CONFIG_HDX_USER_DEV }}
           RCLONE_CONFIG_HDX_PASS: ${{ secrets.RCLONE_CONFIG_HDX_PASS_DEV }}
         with:
-          args: copy convert-absolute-to-relative-urls HDX:/public_html/wp-content/plugins/
+          args: copy convert-absolute-to-relative-urls/ HDX:/public_html/wp-content/plugins/
 
       - name: Copy disable things plugin files on dev
         uses: wei/rclone@v1
@@ -36,7 +36,7 @@ jobs:
           RCLONE_CONFIG_HDX_USER: ${{ secrets.RCLONE_CONFIG_HDX_USER_DEV }}
           RCLONE_CONFIG_HDX_PASS: ${{ secrets.RCLONE_CONFIG_HDX_PASS_DEV }}
         with:
-          args: copy disable-things HDX:/public_html/wp-content/plugins/
+          args: copy disable-things/ HDX:/public_html/wp-content/plugins/
 
   rclone-prod:
     runs-on: ubuntu-latest
@@ -53,7 +53,7 @@ jobs:
           RCLONE_CONFIG_HDX_USER: ${{ secrets.RCLONE_CONFIG_HDX_USER_PROD }}
           RCLONE_CONFIG_HDX_PASS: ${{ secrets.RCLONE_CONFIG_HDX_PASS_PROD }}
         with:
-          args: copy convert-absolute-to-relative-urls HDX:/public_html/wp-content/plugins/
+          args: copy convert-absolute-to-relative-urls/ HDX:/public_html/wp-content/plugins/
 
       - name: Copy disable things plugin files on prod
         uses: wei/rclone@v1
@@ -63,4 +63,4 @@ jobs:
           RCLONE_CONFIG_HDX_USER: ${{ secrets.RCLONE_CONFIG_HDX_USER_PROD }}
           RCLONE_CONFIG_HDX_PASS: ${{ secrets.RCLONE_CONFIG_HDX_PASS_PROD }}
         with:
-          args: copy disable-things HDX:/public_html/wp-content/plugins/
+          args: copy disable-things/ HDX:/public_html/wp-content/plugins/
