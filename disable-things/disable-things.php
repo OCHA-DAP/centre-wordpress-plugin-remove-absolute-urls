@@ -1,9 +1,7 @@
 <?php
 /*
  * Plugin Name: Disable Things
- * Description: This plugin disables:
- *     - Gutenberg Block Editor, enabled by default, and restores the Classic Editor.
- *     - XML-RPC Protocol, enabled by default.
+ * Description: This plugin disables: 1) Gutenberg Block Editor, enabled by default, and restores the Classic Editor; 2) XML-RPC Protocol, enabled by default.
  * Version: 1.0
  * Author: The Centre for Humanitarian Data
  * Author URI: https://centre.humdata.org
